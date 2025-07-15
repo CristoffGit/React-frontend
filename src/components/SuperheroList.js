@@ -21,7 +21,7 @@ const SuperheroList = ({
   const handlePerPageChange = (event) => {
     const value = event.target.value;
     setLimit(Number(value));
-    setCurrentPage(1); // Reset to the first page when the limit changes
+    setCurrentPage(1);
   };
 
   const itemsPerPage = limit;
@@ -30,7 +30,6 @@ const SuperheroList = ({
 
   return (
     <div>
-      {/* Table for displaying superheroes */}
       <table style={listStyles.table}>
         <thead>
           <tr>
@@ -52,7 +51,6 @@ const SuperheroList = ({
         </tbody>
       </table>
 
-      {/* Pagination Control Bar */}
       <div style={listStyles.paginationBar}>
         <div style={listStyles.rowsPerPage}>
           <span>Rows per page:</span>

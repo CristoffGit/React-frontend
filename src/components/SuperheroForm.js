@@ -60,7 +60,6 @@ const SuperheroForm = ({ onAddSuperhero }) => {
         style={formStyles.input}
       />
       
-  {/* Error message displayed below inputs */}
 
 
       <button type="submit" style={formStyles.button}>
